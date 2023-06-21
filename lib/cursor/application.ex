@@ -15,7 +15,8 @@ defmodule Cursor.Application do
       # Start Finch
       {Finch, name: Cursor.Finch},
       # Start the Endpoint (http/https)
-      CursorWeb.Endpoint
+      CursorWeb.Endpoint,
+      Cursor.Presence
       # Start a worker by calling: Cursor.Worker.start_link(arg)
       # {Cursor.Worker, arg}
     ]

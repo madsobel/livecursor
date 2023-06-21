@@ -17,7 +17,7 @@ defmodule CursorWeb.Router do
   scope "/", CursorWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", Live.Cursor, :home
   end
 
   # Other scopes may use custom stacks.
